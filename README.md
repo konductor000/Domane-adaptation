@@ -12,4 +12,4 @@ The methods are sorted from the best to the worst.
 - Fine-tune on 50% wnut sentences that had the highest probability before tuning.
 - Fine-tune only model's classifier on wnut dataset.
 
-[Colab link](https://colab.research.google.com/drive/1LIDoZ_mbzad9EHWuh7PRsqbvfKF1Tgxw?usp=sharing)
+[Colab link](https://colab.research.google.com/github/konductor000/Domane-adaptation/blob/main/domain_adaptation.ipynb)
