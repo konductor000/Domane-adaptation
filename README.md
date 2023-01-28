@@ -1,15 +1,26 @@
+## Domain Adaptation for NLP
 
-## Domain adaptation
+This GitHub project explores the use of domain adaptation techniques on a pre-trained BERT model for Named Entity Recognition (NER) using two datasets: wnut and conll. The goal is to improve the model's performance on the wnut dataset by fine-tuning it using different methods. The project was implemented in Google Colab.  
+### Datasets
 
-I took Bert model trained on NER task and two datasets (wnut and conll). The model coped better with the first dataset than with the second. Then I fine-tuned model using different methods to choose which one is better.
+- wnut: A dataset of tweets and web pages for NER.
+- conll: A dataset of news articles for NER.
+
+### Model
+
+- Pre-trained BERT model for NER task.
 
 ### Results
 
-The methods are sorted from the best to the worst.
+The results are sorted from the best to the worst, according to the performance on the wnut dataset.
 
-- Fine-tune model on wnut dataset.
-- Fine-tune on 25% conll sentences that are most simmilar to wnut dataset. There I used classifier and sentence embeddings to choose 25% sentences.
-- Fine-tune on 50% wnut sentences that had the highest probability before tuning.
-- Fine-tune only model's classifier on wnut dataset.
+- Fine-tuning on the entire wnut dataset
+- Fine-tuning on 25% of the wnut sentences that are most similar to the wnut dataset
+- Fine-tuning on 50% of the wnut sentences that had the highest probability before tuning
+- Fine-tuning only the model's classifier on the wnut dataset
+
+### Usage
+
+You can run this project using Google Colab
 
 [Colab link](https://colab.research.google.com/github/konductor000/Domane-adaptation/blob/main/domain_adaptation.ipynb)
